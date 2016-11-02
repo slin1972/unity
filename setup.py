@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 setup(
-      name="unity",
+      name="N_unity",
       version="0.10",
-      description="My unity module",
+      description="N unity module",
       author="lesenlin",
       url="https://slin1972.github.com",
       license="LGPL",
