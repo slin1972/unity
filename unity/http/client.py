@@ -16,7 +16,7 @@ class HttpUtil:
         pass
 
     @staticmethod
-    def http_send(url, body=None, headers=None, caller=None):
+    def http_send(url, body=None, headers=None, caller=None, timeout=5):
         startTime = time.time()
         log = "[HTTP] "
         if caller is not None:
@@ -36,7 +36,7 @@ class HttpUtil:
         req.add_header('User-Agent', 'elife-client')
         error = None
         try:
-            response = opener.open(req, timeout=5).read()
+            response = opener.open(req, timeout=timeout).read()
             log += "200 "
         except Exception, e:
             error = e
