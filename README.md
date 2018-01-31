@@ -1,3 +1,4 @@
+pip install git+https://github.com/slin1972/unity
 # Common 
 ### Http Client 
 >from unity.http.client import HttpClient 
